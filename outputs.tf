@@ -7,3 +7,8 @@ output "instance_public_ip" {
   description = "Public IP address of the EC2 instance"
   value       = aws_instance.example.public_ip
 }
+
+output "security_group_id" {
+  description = "ID of the security group attached to the EC2 instance"
+  value       = aws_security_group.example.id
+}
